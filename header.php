@@ -30,12 +30,16 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 
 <?php wp_body_open(); ?>
 
-<header><a class="brand" href="#">Framework-Cat</a>
+<header>
+	<a class="brand" href="<?php echo home_url(); ?>">Framework-Cat</a>
 	<nav>
 		<ul>
-			<li><a href="#">Works</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Blogs</a></li>
+			<?php
+				$main_menu = wp_get_nav_menu_items('main-menu', []);
+				foreach($main_menu as $menu):
+			?>
+				<li><a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a></li>
+			<?php endforeach; ?>
 		</ul>
 	</nav>
 </header>

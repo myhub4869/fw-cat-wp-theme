@@ -1,3 +1,19 @@
+/*
+	Theme Name: Framework-cat Original Theme
+	Theme URI: https://github.com/myhub4869/fw-cat-wp-theme.git
+	Description: Framework-cat Portfolio site original theme.
+	Author: Framework-cat
+	Author URI: https://framework-cat.jp/
+	Version: 1.0.0
+	Stable tag: 1.0.0
+	Requires at least: 6.0
+	Tested up to: 6.7
+	Requires PHP: 7.4
+	License: GNU General Public License v3 or later.
+	License URI: https://www.gnu.org/licenses/gpl-3.0.html
+	Text Domain: fw-cat
+	Tags:
+*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -428,10 +444,116 @@ main h1 small {
   font-size: 0.4em;
   color: white;
 }
+main h2 {
+  text-align: center;
+  color: white;
+}
 main p {
   -webkit-margin-before: 2em;
           margin-block-start: 2em;
   text-align: center;
+}
+
+.works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: normal;
+      align-content: normal;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  gap: 2em;
+  font-size: 0.8em;
+}
+.works .work {
+  background-color: #314158;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 1em);
+          flex: 0 0 calc(50% - 1em);
+  border-radius: 10px;
+  border: 1px solid #0d1116;
+  overflow: hidden;
+}
+.works .work .summary {
+  padding: 0.5em 1em;
+}
+.works .work .summary h3 {
+  padding: 0;
+  margin: 0 0 0.5em;
+}
+.works .work .summary p {
+  padding: 0;
+  margin: 0 0 0 1em;
+  text-align: start;
+}
+.works .work .summary div + div {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+}
+.works .work .summary .langs ul, .works .work .summary .envs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: normal;
+      align-content: normal;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  gap: 0.5em;
+}
+.works .work .summary .langs ul li, .works .work .summary .envs ul li {
+  padding: 0.5em 0.8em;
+  background-color: #445a78;
+  border-radius: 40px;
+  font-size: 0.8em;
+}
+.works .work .summary .links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.4em;
+}
+.works .work .summary .links a {
+  color: #bb1366;
+  font-weight: 500;
+}
+.works .work .summary .links a svg {
+  -webkit-margin-end: 0.4em;
+          margin-inline-end: 0.4em;
 }
 
 footer {
