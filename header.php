@@ -38,7 +38,9 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 				$main_menu = wp_get_nav_menu_items('main-menu', []);
 				foreach($main_menu as $menu):
 			?>
-				<li><a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a></li>
+				<li><a href="<?php echo $menu->url; ?>" class="<?php echo get_the_permalink() === $menu->url ? 'active' : ''; ?>">
+					<?php echo $menu->title; ?>
+				</a></li>
 			<?php endforeach; ?>
 		</ul>
 	</nav>
