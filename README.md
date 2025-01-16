@@ -1,1 +1,4 @@
-# fw-cat-wp-theme
+# Framework-cat WordPress Theme
+
+## Summary
+Framework-catのWordPressオリジナルテーマです。
