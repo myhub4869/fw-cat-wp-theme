@@ -20,6 +20,9 @@ get_header();
 $imageBase = get_template_directory_uri() . '/assets/images/';
 $custom_posts = get_posts([
   'category_name' => 'jobs',
+  'orderby' => 'meta_value_num',
+  'meta_key' => 'start_dt',
+  'order' => 'DESC',
 ]);
 ?>
 
