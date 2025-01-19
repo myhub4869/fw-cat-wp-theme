@@ -754,6 +754,9 @@ main p {
   border-radius: 40px;
   font-size: 0.8em;
 }
+.jobs ul li .langs ul li + li {
+  margin: 0;
+}
 
 footer {
   text-align: center;
