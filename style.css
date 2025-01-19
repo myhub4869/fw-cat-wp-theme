@@ -4,7 +4,7 @@
 	Description: Framework-cat Portfolio site original theme.
 	Author: Framework-cat
 	Author URI: https://framework-cat.jp/
-	Version: 1.0.0
+	Version: 1.0.1
 	Stable tag: 1.0.0
 	Requires at least: 6.0
 	Tested up to: 6.7
@@ -357,16 +357,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: unset;
-      flex-wrap: unset;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: normal;
-      align-content: normal;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header a.active {
   font-family: "Zen Kaku Gothic New", serif;
@@ -392,16 +388,12 @@ header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: unset;
-      flex-wrap: unset;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: normal;
-      align-content: normal;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.5em;
 }
 
@@ -421,16 +413,9 @@ main h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: unset;
-      flex-wrap: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: normal;
-      align-content: normal;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
 }
 main h1 img {
   width: 300px;
@@ -470,22 +455,17 @@ main p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-line-pack: normal;
-      align-content: normal;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
   gap: 2em;
   font-size: 0.8em;
 }
 .works .work {
-  background-color: #314158;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 1em);
           flex: 0 0 calc(50% - 1em);
-  border-radius: 10px;
-  border: 1px solid #0d1116;
   overflow: hidden;
+  background-color: #283547;
+  border-radius: 10px;
+  border: 1px solid #161d27;
 }
 .works .work .summary {
   padding: 0.5em 1em;
@@ -503,7 +483,8 @@ main p {
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
 }
-.works .work .summary .langs ul, .works .work .summary .envs ul {
+.works .work .summary .langs ul,
+.works .work .summary .envs ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -521,16 +502,12 @@ main p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-line-pack: normal;
-      align-content: normal;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
   gap: 0.5em;
 }
-.works .work .summary .langs ul li, .works .work .summary .envs ul li {
+.works .work .summary .langs ul li,
+.works .work .summary .envs ul li {
   padding: 0.5em 0.8em;
-  background-color: #445a78;
+  background-color: #3b4d68;
   border-radius: 40px;
   font-size: 0.8em;
 }
@@ -554,6 +531,224 @@ main p {
 .works .work .summary .links a svg {
   -webkit-margin-end: 0.4em;
           margin-inline-end: 0.4em;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 1em;
+  background-color: #283547;
+  border-radius: 10px;
+  border: 1px solid #161d27;
+  padding: 1.5em 1em;
+}
+.profile .icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+.profile .info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 60%;
+          flex: 2 2 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1em;
+}
+.profile .info .name {
+  -webkit-padding-before: 0.5em;
+          padding-block-start: 0.5em;
+  font-size: 1.8em;
+}
+.profile .info .outline {
+  margin: 0;
+  text-align: start;
+}
+.profile .info .links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1em;
+  color: #bb1366;
+  font-weight: 500;
+}
+
+.skills {
+  font-size: 0.8em;
+}
+.skills h3 + ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.skills h3 + ul li.skill {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  background-color: #283547;
+  border-radius: 10px;
+  border: 1px solid #161d27;
+  padding: 1em;
+}
+.skills h3 + ul li.skill strong {
+  font-size: 1.4em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5em;
+}
+.skills h3 + ul li.skill strong svg {
+  color: #ec4899;
+  height: 1em;
+}
+.skills h3 + ul li.skill ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 1.5em;
+          margin-block-start: 1.5em;
+}
+.skills h3 + ul li.skill ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills h3 + ul li.skill ul li + li {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+}
+.skills h3 + ul li.skill ul li img {
+  width: 1.2em;
+}
+.skills h3 + ul li.skill ul li p {
+  margin-block: 0;
+  margin-inline: 0.5em 0;
+}
+
+.jobs {
+  font-size: 0.8em;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+}
+.jobs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jobs ul li {
+  background-color: #283547;
+  border-radius: 10px;
+  border: 1px solid #161d27;
+  padding: 0.5em 1em;
+  font-weight: 300;
+}
+.jobs ul li .bitween {
+  color: #ec4899;
+  font-size: 0.8em;
+}
+.jobs ul li .company {
+  -webkit-padding-before: 0.3em;
+          padding-block-start: 0.3em;
+}
+.jobs ul li .company strong {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.jobs ul li .position {
+  -webkit-padding-before: 0.1em;
+          padding-block-start: 0.1em;
+}
+.jobs ul li .position p {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+  font-size: 1.2em;
+}
+.jobs ul li .description {
+  -webkit-padding-before: 1em;
+          padding-block-start: 1em;
+}
+.jobs ul li .description p {
+  padding: 0;
+  margin: 0;
+  color: #cccccc;
+  text-align: start;
+}
+.jobs ul li .langs {
+  -webkit-margin-before: 1.5em;
+          margin-block-start: 1.5em;
+}
+.jobs ul li .langs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5em;
+}
+.jobs ul li .langs ul li {
+  padding: 0.5em 0.8em;
+  background-color: #3b4d68;
+  border-radius: 40px;
+  font-size: 0.8em;
 }
 
 footer {
