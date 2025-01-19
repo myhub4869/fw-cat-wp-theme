@@ -688,6 +688,10 @@ main p {
   padding: 0.5em 1em;
   font-weight: 300;
 }
+.jobs ul li + li {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+}
 .jobs ul li .bitween {
   color: #ec4899;
   font-size: 0.8em;
