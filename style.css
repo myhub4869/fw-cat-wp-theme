@@ -4,7 +4,7 @@
 	Description: Framework-cat Portfolio site original theme.
 	Author: Framework-cat
 	Author URI: https://framework-cat.jp/
-	Version: 1.0.1
+	Version: 1.0.2
 	Stable tag: 1.0.0
 	Requires at least: 6.0
 	Tested up to: 6.7
@@ -709,8 +709,8 @@ main p {
           padding-block-start: 0.1em;
 }
 .jobs ul li .position p {
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-align: start;
   font-size: 1.2em;
 }
@@ -719,8 +719,8 @@ main p {
           padding-block-start: 1em;
 }
 .jobs ul li .description p {
-  padding: 0;
   margin: 0;
+  padding: 0;
   color: #cccccc;
   text-align: start;
 }
@@ -755,6 +755,75 @@ main p {
   font-size: 0.8em;
 }
 .jobs ul li .langs ul li + li {
+  margin: 0;
+}
+
+.blogs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #283547;
+  border-radius: 10px;
+  border: 1px solid #161d27;
+  font-size: 0.8em;
+  padding: 1em 1.2em;
+}
+.blogs time {
+  font-size: 0.8em;
+  color: #b3b3b3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.4em;
+}
+.blogs time svg {
+  width: 1em;
+}
+.blogs h3 {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  color: white;
+  font-weight: 700;
+}
+.blogs p {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+  font-size: 0.9em;
+  text-align: start;
+}
+.blogs .tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5em;
+}
+.blogs .tags li {
+  padding: 0.5em 0.8em;
+  background-color: #3b4d68;
+  border-radius: 40px;
+  font-size: 0.8em;
+}
+.blogs .tags li + li {
   margin: 0;
 }
 
